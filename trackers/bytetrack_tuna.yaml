@@ -1,0 +1,9 @@
+# ByteTrack tuned for recall: weak detections (>=0.05) can keep an existing tuna track alive,
+# lost tracks survive 2 s at 30 fps so a fish passing behind another keeps its ID.
+tracker_type: bytetrack
+track_high_thresh: 0.25
+track_low_thresh: 0.05
+new_track_thresh: 0.25
+track_buffer: 60
+match_thresh: 0.8
+fuse_score: True
